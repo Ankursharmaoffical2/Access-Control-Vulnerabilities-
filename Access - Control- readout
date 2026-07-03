@@ -1,0 +1,72 @@
+Access Control Vulnerability 
+
+Access control is a security mechanism that determines what a user is allowed to do within an application. It ensures that only authorized users can view or interact with specific data and features.
+
+Access control relies on three core concepts:
+
+
+Identity — who the user is
+Roles — the category the user belongs to
+Permissions — the actions the user is allowed to perform
+
+
+When access control fails, users may be able to access data or functionality they should not have permission to use.
+
+
+The 3 Mechanisms of Access Control
+
+1. Authentication
+
+Verifies the identity of a user, typically through credentials such as a username and password.
+
+2. Session Management
+
+Maintains the state of a logged-in user throughout their activity, ensuring the system continues to recognize them as authenticated.
+
+3. Authorization (Access Control)
+
+Determines what an authenticated user is permitted to do or access within the application.
+
+
+Broken Access Control
+
+Broken access control occurs when a system fails to properly enforce restrictions on user actions. This flaw can allow users to reach data or features that should be protected or hidden.
+
+Attackers can exploit broken access control to:
+
+
+View other users' information
+Perform administrative actions without proper authorization
+
+
+Broken access control is considered one of the most common and severe web security vulnerabilities.
+
+
+Vertical Access Control
+
+Vertical access control refers to a system where different users are granted different levels of permission based on their role.
+
+
+Higher-level users (e.g., administrators) have broad control over the application.
+Lower-level users (e.g., standard users) have limited access to features and data.
+
+
+This model ensures that sensitive actions can only be performed by users with the appropriate authority.
+
+Example: Only an administrator can delete a user account or modify system settings — a standard user cannot.
+
+User TypePermission LevelAdmin (high-level)Full access and controlStandard user (low-level)Limited, restricted access
+
+
+Horizontal Access Control
+
+Horizontal access control refers to a system where users share the same permission level but are restricted to accessing only their own data.
+
+Each user can view or modify only their own resources — not those belonging to other users at the same access level. This ensures privacy between peers and prevents unauthorized access to another user's information.
+
+Example: A bank customer can view only their own account details, not the accounts of other customers.
+
+
+Summary
+
+TypeDescriptionVertical Access ControlRestricts actions based on role hierarchy (admin vs. user)Horizontal Access ControlRestricts access between users of the same role level to their own data
